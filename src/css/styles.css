@@ -116,8 +116,7 @@ main {
 }
 
 .titulo-insolado {
-  margin-top: 5
-  rem;
+  margin-top: 5rem;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -129,10 +128,11 @@ main {
   color: var(--cor-title);
   text-align: center;
   font-size: 3rem;
+  width: 95%;
 }
 
 .faq {
-  margin-top: 5rem;
+  margin-top: 3rem;
   width: 95%;
   display: flex;
   flex-direction: row;
