@@ -1,0 +1,58 @@
+@import url(./styles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: var(--cor-background);
+    background:
+        linear-gradient(rgba(31, 31, 31, 0.854), rgba(31, 30, 30, 0.8)),
+        url('../assets/fundo.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+main h2 {
+    color: var(--cor-title);
+    font-size: 2.8rem;
+}
+
+main p {
+    margin-top: 1rem;
+    color: var(--cor-parag);
+    font-size: 1.5rem;
+}
+
+section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+section {
+    margin-top: 3rem;
+    width: 95%;
+    text-align: center;
+}
+}
+@media screen and (min-width: 1920px) {
+    main h2 {
+    color: var(--cor-title);
+    font-size: 6rem;
+}
+
+main p {
+    margin-top: 1rem;
+    color: var(--cor-parag);
+    font-size: 3rem;
+}
+
+}
