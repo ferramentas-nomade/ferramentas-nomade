@@ -87,7 +87,7 @@ main {
 }
 
 .section-main {
-  margin-top: 10rem;
+  margin-top: 5rem;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -116,7 +116,8 @@ main {
 }
 
 .titulo-insolado {
-  margin-top: 10rem;
+  margin-top: 5
+  rem;
   width: 80%;
   display: flex;
   flex-direction: row;
@@ -384,7 +385,7 @@ footer p {
 
   .messagen-inicial {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .section-main {
@@ -400,7 +401,7 @@ footer p {
 
   .section-main h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .titulo-insolado {
@@ -409,12 +410,12 @@ footer p {
   }
 
   .titulo-insolado h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
 
   .grup-header-1 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .faq {

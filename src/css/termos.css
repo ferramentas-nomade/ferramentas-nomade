@@ -6,10 +6,11 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+html{
+background-color: var(--cor-background);
+}
 body {
     position: relative;
-    background-color: var(--cor-background);
     background:
         linear-gradient(rgba(31, 31, 31, 0.854), rgba(31, 30, 30, 0.8)),
         url('../assets/fundo.png') no-repeat center center;
@@ -41,6 +42,16 @@ section {
     margin-top: 3rem;
     width: 95%;
     text-align: center;
+}
+   main h2 {
+    color: var(--cor-title);
+    font-size: 2.5rem;
+}
+
+main p {
+    margin-top: 1rem;
+    color: var(--cor-parag);
+    font-size: 1.2rem;
 }
 }
 @media screen and (min-width: 1920px) {
