@@ -65,4 +65,34 @@ document.querySelectorAll('img').forEach(img => {
 document.querySelectorAll('btn').forEach(btn => {
   btn.ondragstart = () => false;
 });
+ document.addEventListener("DOMContentLoaded", () => {
+    const lazyElements = document.querySelectorAll('.lazy-img');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+
+          // Se for vídeo
+          if (el.tagName === 'VIDEO') {
+            el.innerHTML = `
+              <source src="${el.dataset.src}" type="video/mp4">
+            `;
+            el.load();
+          } else {
+            // Imagem ou gif
+            el.src = el.dataset.src;
+          }
+
+          el.classList.remove('lazy-img');
+          observer.unobserve(el);
+        }
+      });
+    }, {
+      rootMargin: "0px 0px 200px 0px",
+      threshold: 0.1
+    });
+
+    lazyElements.forEach(el => observer.observe(el));
+  });
 
