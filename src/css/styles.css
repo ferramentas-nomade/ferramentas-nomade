@@ -47,7 +47,7 @@ header {
   padding: 100px 20px;
   background:
     linear-gradient(rgba(31, 31, 31, 0.657), rgba(31, 30, 30, 0.8)),
-    url('../assets/Ferramentas nômade.gif') no-repeat center center;
+    url('../assets/Ferramentas-nômade.webp') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   /* Efeito parallax opcional */
@@ -376,7 +376,7 @@ footer p {
   header {
     background:
       linear-gradient(rgba(31, 31, 31, 0.657), rgba(31, 30, 30, 0.8)),
-      url('../assets/fundo-mobile.gif') no-repeat center center/cover;
+      url('../assets/fundo-mobile.webp') no-repeat center center/cover;
   }
 
   .grup-header-1 {
